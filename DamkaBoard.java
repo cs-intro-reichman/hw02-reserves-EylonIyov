@@ -4,18 +4,19 @@
 public class DamkaBoard {
 	public static void main(String[] args) {
 		int num = Integer.parseInt(args[0]);
-		for (int i = 0; i < num; i++){
-			if (i%2==1){
-				System.out.print(" ");	
-			}
+		for (int i = 0; i < num; i++){	
 			for (int j = 0; j < num; j++){
-				if (j != num-1){
-					System.out.print("* ");
-				}else{
-					System.out.print("*");
+				if (i%2 == 0)
+					if (j != num-1){
+						System.out.print("* ");
+					}else{
+						System.out.print("*");
+					}
+				if (i%2 == 1){
+					System.out.print(" *");
 				}
 			}
-		System.out.println("");
+		System.out.println(" ");
 		}
 	}
 }
