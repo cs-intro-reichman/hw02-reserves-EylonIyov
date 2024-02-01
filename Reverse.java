@@ -7,7 +7,12 @@ public class Reverse {
 		String word = args[0];
 		int wordSize = word.length();
 		String wordNew = "";
-		char middle = word.charAt((wordSize/2));
+		if (wordSize%2 ==0){
+			char middle = word.charAt((wordSize/2)-1);
+		}
+		else{
+			char middle = word.charAt((wordSize/2));
+		}
 		for (int i = 1; i<= wordSize; i++){
 			wordNew += word.charAt(wordSize-i);
 		}
