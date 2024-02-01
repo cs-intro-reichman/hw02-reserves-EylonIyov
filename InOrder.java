@@ -7,12 +7,10 @@ public class InOrder {
 		int numOld=0, numNew;
 		numNew = (int)(Math.random()*10);
 		while (numNew >= numOld){
-			System.err.print(numNew+ " ");
+			System.out.print(numNew+ " ");
 			numOld = numNew;
 			numNew = (int)(Math.random()*10);
-
 		}
-			
 		
 	}
 }
